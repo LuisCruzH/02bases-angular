@@ -1,0 +1,10 @@
+
+
+<!--Etiqueta dentro de un ciclo for para recorrer los elementos del menu-component-->
+<ul class="list-group">
+    <a [routerLink]="ruta.path" 
+        class="list-group-item" 
+        *ngFor="let ruta of rutas">
+        <!--rutas pertenece a menu.components.ts y se le asigna una variable local ruta para recorrer el json-->
+        {{ruta.name}}</a>
+</ul>
