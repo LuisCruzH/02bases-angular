@@ -1,13 +1,7 @@
 <h1>Posts</h1>
 <ul class="list-group">
-  <<<<<<< HEAD
-    <li *ngFor="let post of []" class="list-group-item">
-        <h2>Titulo</h2>
-        <p>Holo crayolo</p>
-=======
-    <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
-        <h2>{{mensaje.title}}}</h2>
-        <p>{{mensaje.body}}</p>
->>>>>>> 2c95ac7922e47b35fce0bb3ab0cc25b2e1c2848f
-
+  <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
+    <h2>{{ mensaje.title }}}</h2>
+    <p>{{ mensaje.body }}</p>
+  </li>
 </ul>
